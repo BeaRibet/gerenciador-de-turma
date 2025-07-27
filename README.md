@@ -33,33 +33,33 @@ O código pode ser executado em ambientes de Portugol, como:
 
 ## 📷 Exemplo de Fluxo do Programa
 
-Menu Principal:
+Menu Principal:  
 1 - Cadastrar aluno
-2 - Remover Aluno
-3 - Buscar Aluno
-4 - Listar todos os Alunos
-5 - Listar Alunos Aprovados
-6 - Listar Alunos Reprovados
-7 - Sair
-Opção: 1
+2 - Remover Aluno  
+3 - Buscar Aluno  
+4 - Listar todos os Alunos  
+5 - Listar Alunos Aprovados  
+6 - Listar Alunos Reprovados  
+7 - Sair  
+Opção: 1  
 
-Preencha as informações a seguir:
-CPF: 12345678900
-Nome: Ana Silva
-Data de nascimento: 10/10/2000
-Média: 8
+Preencha as informações a seguir:  
+CPF: 12345678900  
+Nome: Ana Silva  
+Data de nascimento: 10/10/2000  
+Média: 8  
 
-Aluno Ana Silva cadastrado com sucesso!
+Aluno Ana Silva cadastrado com sucesso!  
 
-Menu Principal:
-1 - Cadastrar aluno
-2 - Remover Aluno
-3 - Buscar Aluno
-4 - Listar todos os Alunos
-5 - Listar Alunos Aprovados
-6 - Listar Alunos Reprovados
-7 - Sair
-Opção: 5
+Menu Principal:  
+1 - Cadastrar aluno  
+2 - Remover Aluno  
+3 - Buscar Aluno  
+4 - Listar todos os Alunos  
+5 - Listar Alunos Aprovados  
+6 - Listar Alunos Reprovados  
+7 - Sair  
+Opção: 5  
 
-Alunos aprovados:
+Alunos aprovados:  
 Ana Silva
