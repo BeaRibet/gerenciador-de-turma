@@ -19,14 +19,31 @@ programa{
 		logico fazer_cadastro = verdadeiro
 		cadeia cpf
 		
-		escreva("Preencha as informações a seguir:")
-		escreva("\nCPF:")
+		escreva("Preencha as informações a seguir:\nCPF: ")
 		leia(cpf)
 
 		para(inteiro i = 0; i < cadastros; i++){
 			se(matriz[i][2] == cpf){
-				escreva("\nO CPF informado já existe!")
+				escreva("\nO CPF informado já existe!\n")
 				fazer_cadastro = falso
+				se(Tipos.cadeia_para_logico(matriz[i][4]) == falso){
+					inteiro opcao
+					escreva("Aluno desativado, deseja reativar?\n1 - Sim\n2 - Não\nOpção: ")
+					leia(opcao)
+					escolha(opcao){
+						caso 1: 
+							matriz[i][4] = "verdadeiro"
+							escreva("Aluno ", matriz[i][0], " reativado com sucesso!\n")
+						pare
+						caso 2:
+							escreva("Aluno ", matriz[i][0], " segue desativado\n")
+						pare
+						caso contrario:
+							escreva("Opção inválida, retornando pro menu inicial.")
+						pare
+					}
+					i = cadastros //para encerrar o loop do laço de repetição quando encontrar o cpf.
+				}
 			}
 		}
 
@@ -69,6 +86,7 @@ programa{
 			para(inteiro i= 0;i<cadastros; i++){
 				se(matriz[i][2] == cpf){
 					matriz[i][4] = "falso"
+					i = cadastros //para encerrar o loop do laço de repetição quando encontrar o cpf.
 				}
 			}
 			escreva("\nAluno removido com sucesso!")
@@ -84,6 +102,7 @@ programa{
 				se(matriz[i][2] == cpf){
 					escreva("\nNome: ", matriz[i][0], "\nData de Nascimento: ", matriz[i][1])
 					escreva("\nCPF: ", matriz[i][2],"\nMédia: ", matriz[i][3])
+					i = cadastros //para encerrar o loop do laço de repetição quando encontrar o cpf.
 				}
 			}
 		}
@@ -155,8 +174,8 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2229; 
- * @DOBRAMENTO-CODIGO = [9, 52, 63, 77, 91];
+ * @POSICAO-CURSOR = 256; 
+ * @DOBRAMENTO-CODIGO = [9, 17, 69, 80, 95, 110];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
